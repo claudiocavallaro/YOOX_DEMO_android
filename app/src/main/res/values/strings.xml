@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">20190722_cavallaro_yoox</string>
+    <string name="menu">SORT</string>
+    <string name="menu1">LATEST</string>
+    <string name="menu2">LOWEST</string>
+    <string name="menu3">HIGHEST</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.yoox.a20190722_cavallaro_yoox.ViewModel;
+package com.yoox.a20190722_cavallaro_yoox.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,6 +16,8 @@ import com.yoox.a20190722_cavallaro_yoox.Model.Item;
 import com.yoox.a20190722_cavallaro_yoox.Model.Search;
 import com.yoox.a20190722_cavallaro_yoox.Persistence.Communicator;
 import com.yoox.a20190722_cavallaro_yoox.R;
+import com.yoox.a20190722_cavallaro_yoox.ViewModel.ListAdapterItem;
+import com.yoox.a20190722_cavallaro_yoox.ViewModel.ModelItem;
 
 import java.util.ArrayList;
 
@@ -31,6 +33,8 @@ public class FragmentLatest extends Fragment {
     private ListAdapterItem listAdapterItem;
 
     private Search search;
+
+    // ------------------------- GETTER AND SETTER-------------------------------
 
     public Communicator getCommunicator() {
         return communicator;
@@ -79,6 +83,8 @@ public class FragmentLatest extends Fragment {
     public void setSearch(Search search) {
         this.search = search;
     }
+
+    //------------------------------------------------------------------------------------------
 
     @Nullable
     @Override

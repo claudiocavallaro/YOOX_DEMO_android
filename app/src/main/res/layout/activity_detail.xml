@@ -36,30 +36,89 @@
         android:layout_margin="5dp"
         android:textColor="#008000"
         android:textStyle="bold"
+        android:id="@+id/priceDet"
         android:layout_toRightOf="@id/imageDet"
         android:layout_below="@id/textCategoryDet"
         android:text="PRICE"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/button"
+        android:background="@drawable/button_draw"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:layout_toRightOf="@id/imageDet"
+        android:layout_below="@id/priceDet"
+        android:text="SHIPPING INFO"
+        android:textColor="#FFFFFF" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/viewDet"
+        android:layout_below="@+id/imageDet"
+        android:layout_marginTop="5dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageDet"
-        android:text="INFO"
+        android:layout_below="@+id/viewDet"
+        android:layout_alignParentLeft="true"
         android:layout_margin="5dp"
-        android:id="@+id/textInfoDet"/>
+        android:id="@+id/avColors"
+        android:text="AVAILABLE COLORS"/>
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/textInfoDet"
-        android:fillViewport="true">
+    <TextView
+        android:id="@+id/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewDet"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/avColors"
+        android:text="AVAILABLE SIZE" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </android.support.v4.widget.NestedScrollView>
+    <ListView
+        android:id="@+id/listViewColor"
+        android:layout_alignParentLeft="true"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/avColors">
+    </ListView>
 
+    <ListView
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:id="@+id/listViewSize"
+        android:layout_below="@id/textSize"
+        android:layout_alignParentRight="true">
+
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/viewDet2"
+        android:layout_below="@id/listViewColor"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInfo"
+        android:text="INFO"
+        android:layout_below="@id/viewDet2"
+        android:layout_margin="5dp"
+        />
 
 </RelativeLayout>

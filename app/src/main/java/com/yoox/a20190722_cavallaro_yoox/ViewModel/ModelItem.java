@@ -1,4 +1,4 @@
-package com.yoox.a20190722_cavallaro_yoox.View;
+package com.yoox.a20190722_cavallaro_yoox.ViewModel;
 
 public class ModelItem {
 
