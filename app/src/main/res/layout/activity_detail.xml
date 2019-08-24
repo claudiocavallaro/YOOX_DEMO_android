@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:id="@+id/imageDet"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageDet"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/textBrandDet"
+        android:text="BRAND"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/imageDet"
+        android:layout_below="@id/textBrandDet"
+        android:id="@+id/textCategoryDet"
+        android:text="CATEGORY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="#008000"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageDet"
+        android:layout_below="@id/textCategoryDet"
+        android:text="PRICE"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDet"
+        android:text="INFO"
+        android:layout_margin="5dp"
+        android:id="@+id/textInfoDet"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textInfoDet"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
